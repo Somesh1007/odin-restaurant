@@ -1,1 +1,1 @@
-alert("Just a Test Confirmation");
+console.log("Just a Test Confirmation");
