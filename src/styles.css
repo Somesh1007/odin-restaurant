@@ -1,0 +1,23 @@
+:root {
+    --full-height: 100vh;
+    --full-width: 100vw;
+    --header-height: calc(var(--full-height) / 10)
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#content {
+    height: var(--full-height);
+    border: 2px solid red;
+
+}
+
+
+.header {
+    height: var(--header-height);
+    background-color: aquamarine;
+    text-align: center;
+}
