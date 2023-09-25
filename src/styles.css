@@ -1,23 +1,104 @@
+@font-face {
+    font-family: chineseFont;
+    src: url(../fonts/go3v2.ttf);
+}
+
 :root {
     --full-height: 100vh;
     --full-width: 100vw;
-    --header-height: calc(var(--full-height) / 10)
+    --header-height: calc(var(--full-height) / 10);
+    --tabs-header-height: 70px;
+    --content-height: calc(var(--full-height) - var(--header-height) - var(--tabs-header-height));
+    --chinese-red: #aa381e;
+    --shadow-bottom: 3px 1px 20px 8px rgba(0, 0, 0, 0.1)
 }
 
 body {
     margin: 0px;
     padding: 0px;
+    font-family: chineseFont;
 }
 
 #content {
     height: var(--full-height);
-    border: 2px solid red;
-
 }
-
 
 .header {
     height: var(--header-height);
-    background-color: aquamarine;
+    background-color: var(--chinese-red);
     text-align: center;
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: var(--shadow-bottom);
+}
+
+.tabs {
+    box-sizing: border-box;
+    background-color: #cccccc;
+    text-align: center;
+    padding: 10px;
+    height: var(--tabs-header-height);
+    /* display: flex;
+    align-items: center;
+    justify-content: space-evenly; */
+}
+
+.tabs button {
+    border: 0px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    margin-right: 100px;
+    font-family: chineseFont;
+    cursor: pointer;
+}
+
+.tabs button:hover,
+.tabs button:active {
+    background-color: green;
+    color: white;
+    /* border-bottom: 5px solid black; */
+    transform: translateY(-10%);
+}
+
+.home,
+.menu,
+.contact,
+.about {
+    height: var(--content-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.home {
+    flex-direction: column;
+}
+
+.quote-text {
+    margin-top: -100px;
+    font-size: 2.5rem;
+}
+
+.year-text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 300px;
+}
+
+.home-image {
+    height: 320px;
+    width: 420px;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.menu .menu-container {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
 }
