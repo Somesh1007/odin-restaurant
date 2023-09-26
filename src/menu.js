@@ -4,14 +4,13 @@ export function loadMenu() {
 
     const menuContainer = document.createElement('div')
     menuContainer.classList.add('menu-container')
-    menuContainer.appendChild(createMenuItem('Manchurian Noodles', ''))
-    menuContainer.appendChild(createMenuItem('Hakka Noodles', ''))
-    menuContainer.appendChild(createMenuItem('Japanese Pan Noodles', ''))
-    menuContainer.appendChild(createMenuItem('Buttered Noodles', ''))
-    menuContainer.appendChild(createMenuItem('Pasta Fresca', ''))
-    menuContainer.appendChild(createMenuItem('Pad Thai', ''))
-    menuContainer.appendChild(createMenuItem('Spicy Korean Noodles', ''))
-
+    menuContainer.appendChild(createMenuItem('Manchurian Noodles', '../images/manchurian-noodles.webp'))
+    menuContainer.appendChild(createMenuItem('Hakka Noodles', '../images/hakka-noodles.webp'))
+    menuContainer.appendChild(createMenuItem('Japanese Pan Noodles', '../images/japanese-pan-noodles.webp'))
+    menuContainer.appendChild(createMenuItem('Buttered Noodles', '../images/buttered-noodles.webp'))
+    menuContainer.appendChild(createMenuItem('Pasta Fresca', '../images/pasta-fresca.webp'))
+    menuContainer.appendChild(createMenuItem('Pad Thai', '../images/pad-thai.webp'))
+    menuContainer.appendChild(createMenuItem('Spicy Korean Noodles', '../images/spicy-korean-noodles.webp'))
 
     menu.appendChild(menuContainer)
 
@@ -39,7 +38,7 @@ function createMenuItem(itemName, imagePath) {
     orderButton.classList.add('order-button')
     orderButton.textContent = 'Order Now'
 
-    menuItemContent.appendChild(itemImage)
+    menuItemContent.appendChild(itemNameDiv)
     menuItemContent.appendChild(orderButton)
 
     menuItem.appendChild(itemImage)

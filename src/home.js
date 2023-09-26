@@ -14,7 +14,7 @@ export function loadHome() {
     const homeImage = document.createElement('img')
     homeImage.classList.add('home-image')
 
-    homeImage.setAttribute('src', '../images/home-noodles.jpeg')
+    homeImage.setAttribute('src', '../images/home-noodles.avif')
     homeImage.setAttribute('alt', 'Home Noodles Image')
 
 
