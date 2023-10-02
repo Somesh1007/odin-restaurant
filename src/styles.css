@@ -161,7 +161,19 @@ button {
 }
 
 .contact-map {
+    margin-top: 30px;
     border-radius: 5px;
     height: 400px;
     width: 500px;
+}
+
+.about {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.about-footer {
+    margin-top: 20px;
+    font-size: 3rem;
+    padding-left: 400px;
 }

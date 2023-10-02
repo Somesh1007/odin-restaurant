@@ -14,7 +14,7 @@ export function loadAbout() {
 
     const aboutFooter = document.createElement('div')
     aboutFooter.classList.add('about-footer')
-    aboutFooter.textContent = `Somesh Joshi`
+    aboutFooter.textContent = `Noodles Restaurant`
 
     about.appendChild(aboutHistory)
     about.appendChild(aboutFooter)
