@@ -1,3 +1,6 @@
+import HomeImage from '../images/home-noodles.avif'
+
+
 export function loadHome() {
     const home = document.createElement('div')
     home.classList.add('home')
@@ -11,12 +14,10 @@ export function loadHome() {
     yearText.classList.add('year-text')
     yearText.textContent = `- Since 1970`
 
-    const homeImage = document.createElement('img')
+    const homeImage = new Image()
+    homeImage.src = HomeImage
+    homeImage.alt = 'Home Noodles Image'
     homeImage.classList.add('home-image')
-
-    homeImage.setAttribute('src', '../images/home-noodles.avif')
-    homeImage.setAttribute('alt', 'Home Noodles Image')
-
 
     const homeFooter = document.createElement('div')
     homeFooter.classList.add('home-footer')

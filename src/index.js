@@ -2,6 +2,7 @@ import { loadHome, removeHome } from "./home";
 import { loadMenu, removeMenu } from "./menu";
 import { loadContact, removeContact } from "./contact";
 import { loadAbout, removeAbout } from "./about";
+import '../src/styles.css'
 
 loadInitialContent()
 

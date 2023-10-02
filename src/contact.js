@@ -1,12 +1,16 @@
+import PhoneIcon from '../icons/phone-classic.svg'
+import OfficeIcon from '../icons/office-building-marker.svg'
+import MapImage from '../images/map-image.jpg'
+
 export function loadContact() {
     const contact = document.createElement('div')
     contact.classList.add('contact')
 
-    const phoneIcon = document.createElement('img')
+    const phoneIcon = new Image()
+    phoneIcon.src = PhoneIcon
+    phoneIcon.alt = 'Phone Icon'
     phoneIcon.classList.add('icon-image')
     phoneIcon.classList.add('phone-icon')
-    phoneIcon.setAttribute('src', '../icons/phone-classic.svg')
-    phoneIcon.setAttribute('alt', 'Phone Icon')
 
     const phoneText = document.createElement('span')
     phoneText.classList.add('contact-text')
@@ -18,11 +22,11 @@ export function loadContact() {
     contactPhone.appendChild(phoneIcon)
     contactPhone.appendChild(phoneText)
 
-    const officeIcon = document.createElement('img')
+    const officeIcon = new Image()
+    officeIcon.src = OfficeIcon
+    officeIcon.alt = 'Office Icon'
     officeIcon.classList.add('icon-image')
     officeIcon.classList.add('office-icon')
-    officeIcon.setAttribute('src', '../icons/office-building-marker.svg')
-    officeIcon.setAttribute('alt', 'Office Icon')
 
     const addressText = document.createElement('span')
     addressText.classList.add('contact-text')
@@ -34,10 +38,10 @@ export function loadContact() {
     contactAddress.appendChild(officeIcon)
     contactAddress.appendChild(addressText)
 
-    const contactMap = document.createElement('img')
+    const contactMap = new Image()
+    contactMap.src = MapImage
+    contact.alt = 'Map Image'
     contactMap.classList.add('contact-map')
-    contactMap.setAttribute('src', '../images/map-image.jpg')
-    contactMap.setAttribute('alt', 'Map Image')
 
     contact.appendChild(contactPhone)
     contact.appendChild(contactAddress)
